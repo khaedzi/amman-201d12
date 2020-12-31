@@ -124,6 +124,7 @@ var thArray=[parseInt(tosumth)
 
 return thArray;}
 
+
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
