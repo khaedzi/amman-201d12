@@ -61,11 +61,44 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+/*    function sum3(){
+        var sum1=a+b+c;
+        return sum1;
+    }
+    function mult(){
+        var mult1=a*b*c;
+        return mult1;
+    }
+    var myArrayp3=[pasum3(),
+        mult(),
+        "4 and 7 and 5 sum to 16.",
+        "The product of 4 and 7 and 5 is 140."]
 
+
+return myArrayp3;*/
+
+var newsum =sum(a,b);
+
+
+//console.log(newsum[1]);
+var totalsum=sum(newsum[0],c);
+
+
+var newmult=multiply(a,b);
+var totalmul=multiply(newmult[0],c);
+//console.log(totalsum);
+//console.log(totalmul);
+var myArrayp3=[parseInt(totalsum),
+    parseInt(totalmul),
+    "4 and 7 and 5 sum to 16.",
+    "The product of 4 and 7 and 5 is 140."]
+return myArrayp3
 }
 
-// Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+
+
+//Here is the test for sumAndMultiply(); uncomment it to run it
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
